@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Country demographics</h1>
+
+<div id="country_demographics">
+  <% @country_demographics.each do |country_demographic| %>
+    <%= render country_demographic %>
+    <p>
+      <%= link_to "Show this country demographic", country_demographic %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New country demographic", new_country_demographic_path %>

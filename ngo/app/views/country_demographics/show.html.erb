@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @country_demographic %>
+
+<div>
+  <%= link_to "Edit this country demographic", edit_country_demographic_path(@country_demographic) %> |
+  <%= link_to "Back to country demographics", country_demographics_path %>
+
+  <%= button_to "Destroy this country demographic", @country_demographic, method: :delete %>
+</div>
